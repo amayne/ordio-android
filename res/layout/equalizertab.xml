@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="4px">
+
+	<CheckBox android:text="@string/EqualizerCheckBoxText"
+		android:id="@+id/EqualizerCheckBoxEnable" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginBottom="10dip">
+	</CheckBox>
+
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_marginBottom="4dip">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:padding="6dip">
+			<TextView android:id="@+id/freq31" android:layout_width="20dip"
+				android:layout_height="20dip"
+				android:text="31hz" />
+			<SeekBar android:id="@+id/seek31" android:layout_width="fill_parent"
+				android:layout_height="20dip" android:max="100"
+				android:progress="0"/>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:padding="6dip">
+			<TextView android:id="@+id/freq62" android:layout_width="20dip"
+				android:layout_height="20dip"
+				android:text="62hz" />
+			<SeekBar android:id="@+id/seek62" android:layout_width="fill_parent"
+				android:layout_height="20dip" android:max="100"
+				android:progress="0"/>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:padding="6dip">
+			<TextView android:id="@+id/freq125" android:layout_width="20dip"
+				android:layout_height="20dip"
+				android:text="125hz" />
+			<SeekBar android:id="@+id/seek125" android:layout_width="fill_parent"
+				android:layout_height="20dip" android:max="100"
+				android:progress="0"/>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:padding="6dip">
+			<TextView android:id="@+id/freq250" android:layout_width="20dip"
+				android:layout_height="20dip"
+				android:text="250hz" />
+			<SeekBar android:id="@+id/seek250" android:layout_width="fill_parent"
+				android:layout_height="20dip" android:max="100"
+				android:progress="0"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

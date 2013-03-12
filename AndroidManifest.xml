@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.ordio.player"
+      android:versionCode="1"
+      android:versionName="1.0">
+     <application android:icon="@drawable/icon" android:label="@string/app_name"
+     	android:theme="@android:style/Theme.NoTitleBar" android:name="GlobalState">
+        <activity android:label="@string/app_name" android:name=".OrdioActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<activity android:name=".PlayerTabActivity"></activity>
+<service android:name=".backend.PlaybackService" android:process=":remote"></service>
+<activity android:name=".LibraryTabActivity" android:screenOrientation="portrait"></activity>
+<activity android:name=".EffectsTabActivity" android:screenOrientation="portrait"></activity>
+<activity android:name=".EqualizerTabActivity" android:screenOrientation="portrait"></activity>
+</application>
+    <uses-sdk android:minSdkVersion="3" />
+</manifest> 

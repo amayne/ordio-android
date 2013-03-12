@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="1dp"
+	android:paddingBottom="0dp">
+
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:id="@+id/ListViewPlayingSongs">
+
+		<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/songrow" android:layout_width="fill_parent"
+			android:layout_height="64dip" android:padding="6dip">
+
+			<TextView android:id="@+id/artist" android:layout_width="fill_parent"
+				android:layout_height="26dip" android:layout_below="@+id/track"
+				android:layout_alignLeft="@id/track"
+				android:layout_alignParentBottom="true" android:gravity="top"
+				android:text="The Airborne Toxic Event" />
+
+			<TextView android:id="@+id/track" android:layout_marginLeft="6dip"
+				android:layout_width="fill_parent" android:layout_height="26dip"
+
+				android:layout_toRightOf="@+id/artwork" android:textAppearance="?android:attr/textAppearanceMedium"
+				android:gravity="bottom" android:text="Sometime Around Midnight" />
+
+			<ImageView android:id="@+id/artwork" android:layout_width="56dip"
+				android:layout_height="56dip" android:layout_gravity="center_vertical"
+				src="@drawable/albumart_mp_unknown" />
+
+		</RelativeLayout>-->
+	</ListView>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="70dp"
+		android:layout_alignParentBottom="true" android:background="@drawable/menu_background"
+		android:padding="5dp" android:orientation="horizontal">
+
+		<ImageButton android:id="@+id/ButtonStart"
+			android:layout_width="75dp" android:layout_height="60dp"
+			android:scaleType="fitCenter" android:src="@drawable/playback_play"
+			android:background="@drawable/player_button_background" />
+
+		<ImageButton android:id="@+id/ButtonPause"
+			android:layout_width="50dp" android:layout_height="60dp"
+			android:scaleType="fitCenter" android:src="@drawable/playback_pause"
+			android:background="@drawable/player_button_background"
+			android:layout_gravity="center_horizontal" />
+
+		<Button android:id="@+id/ButtonTap" android:text="@string/ButtonTapText"
+			android:layout_width="80dp" android:layout_height="60dp"
+			android:scaleType="fitCenter" android:textColor="#C0C0C0"
+			android:background="@drawable/player_button_background"
+			android:layout_gravity="center_horizontal" />
+
+		<ImageButton android:id="@+id/ButtonLoop"
+			android:layout_width="80dp" android:layout_height="60dp"
+			android:scaleType="fitCenter" android:src="@drawable/playback_loop"
+			android:background="@drawable/player_button_background"
+			android:layout_gravity="center_horizontal" />
+	</LinearLayout>
+</LinearLayout>

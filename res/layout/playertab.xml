@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="1dp"
+	android:paddingBottom="0dp">
+
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:id="@+id/ListViewPlayingSongs">
+	</ListView>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="70dp"
+		android:layout_alignParentBottom="true" android:paddingTop="5dp"
+		android:orientation="horizontal" android:background="@drawable/menu_background">
+		<ImageButton android:id="@+id/ButtonLeftSeek"
+			android:layout_width="80dp" android:layout_height="60dp"
+			android:scaleType="fitCenter" android:src="@drawable/leftseek"
+			android:padding="15dp" android:background="@drawable/player_button_background"
+			android:layout_gravity="center_horizontal" />
+		<ImageButton android:id="@+id/ButtonPlay"
+			android:layout_width="75dp" android:layout_height="60dp"
+			android:scaleType="fitCenter" android:src="@drawable/playback_play"
+			android:padding="15dp" android:background="@drawable/player_button_background" />
+		<ImageButton android:id="@+id/ButtonRightSeek"
+			android:layout_width="80dp" android:layout_height="60dp"
+			android:scaleType="fitCenter" android:src="@drawable/rightseek"
+			android:padding="15dp" android:background="@drawable/player_button_background"
+			android:layout_gravity="center_horizontal" />
+		<Button android:id="@+id/ButtonTap" android:text="@string/ButtonTapText"
+			android:layout_width="80dp" android:layout_height="60dp"
+			android:scaleType="fitCenter" android:textColor="#C0C0C0"
+			android:background="@drawable/player_button_background"
+			android:layout_gravity="center_horizontal" />
+	</LinearLayout>
+</LinearLayout>
